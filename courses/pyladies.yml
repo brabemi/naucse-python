@@ -1,124 +1,176 @@
-title: Začátečnický kurz
+
+title: Začátečnický kurz PyLadies
+subtitle: Praha - podzim 2022
+time: 18:00 - 20:00
+default_time:
+  start: '18:00'
+  end: '20:00'
+timezone: Europe/Prague
+place: Praha
 description: Naučte se Python vážně od začátku. Žádné předchozí znalosti nejsou potřeba.
 long_description: |
-
-    Zde najdeš materiály, které se používají na začátečnických kurzech PyLadies
-    v Praze, Brně a Ostravě.
-
-    Jednotlivé lekce jsou určeny naprostým začátečníkům, žádné předchozí
-    znalosti nejsou nutné. Instrukce jsou uvedeny pro operační systémy Linux,
-    Windows i macOS.
-canonical: true
+    Tady najdeš všechny materiály k pražské verzi začátečnického kurzu PyLadies. Stránky samotných PyLadies jsou na https://pyladies.cz. Jednotlivé lekce jsou určeny naprostým začátečnicím. Instrukce jsou uvedeny pro operační systémy Linux, Windows i macOS.
+    Domácí projekty lze odevzdávat na projekty.pyladies.cz.
 vars:
-  coach-present: false
+  user-gender: f
+  pyladies: true
+  coach-present: true
 sessions:
-- title: Instalace
-  slug: install
+- slug: install
+  title: Instalace (domácí příprava)
+  serial: 0
   materials:
-  - lesson: beginners/cmdline
-  - lesson: beginners/install
-  - lesson: beginners/venv-setup
-  - lesson: beginners/first-steps
-  - lesson: beginners/install-editor
-  - lesson: git/install
-  - title: Tahák na klávesnici (PDF)
-    url: https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf
-    type: cheatsheet
+    - lesson: beginners/install
+      type: lesson
+    - lesson: beginners/install-editor
+      type: lesson
 
 - title: První program
-  slug: hello
+  slug: first-program
+  date: 2022-09-21
   materials:
-  - lesson: beginners/hello-world
-  - lesson: beginners/print
-  - lesson: beginners/variables
-  - lesson: beginners/comparisons
-  - lesson: beginners/and-or
+    - title: Úvodní prezentace
+      url: http://pyladies.cz/v1/s001-install/uvod-praha.html
+    - lesson: beginners/cmdline
+      type: lesson
+    - lesson: beginners/venv-setup
+      type: lesson
+    - lesson: beginners/first-steps
+      type: lesson
+    - lesson: beginners/hello-world
+      type: lesson
+    - title: Domácí projekty
+      url: https://projekty.pyladies.cz/
+      type: homework
+    - title: Tahák na klávesnici (PDF)
+      url: https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf
+      type: cheatsheet
+    - title: Tahák na příkazovou řádku a první kroky v Pythonu (PDF)
+      url: https://s3-eu-west-1.amazonaws.com/messa-shared-files/2017/09/pyladies_2_lekce_tahak.pdf
+      type: cheatsheet
 
-- title: Cykly
-  slug: loops
+- title: Proměnné a podmínky
+  slug: variables-ifs
+  date: 2022-09-27
   materials:
-  - lesson: beginners/expressions
-  - lesson: beginners/functions
-  - lesson: beginners/basic-functions
-  - lesson: intro/turtle
-  - lesson: beginners/while
-  - lesson: beginners/reassignment
-  - title: Tahák s užitečnými funkcemi
-    url: https://pyvec.github.io/cheatsheets/basic-functions/basic-functions-cs.pdf
-    type: cheatsheet
+    - lesson: beginners/print
+      type: lesson
+    - lesson: beginners/variables
+      type: lesson
+    - lesson: beginners/comparisons
+      type: lesson
+    - title: "*Nebo* anebo *a*"
+      lesson: beginners/and-or
+      vars:
+        bonus: true
+    - title: Tahák na běžné chyby a chybové hlášky (PDF)
+      url: https://pyvec.github.io/cheatsheets/errors/errors-cs.pdf
+      type: cheatsheet
 
-- title: Správa zdrojového kódu
-  slug: git
+- slug: loops
+  title: Funkce a cyklus For
+  date: 2022-10-05
   materials:
-  - lesson: git/basics
-  - lesson: git/branching
-  - title: Gitový tahák
-    url: https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf
-    type: cheatsheet
+    - lesson: beginners/functions
+      type: lesson
+    - lesson: beginners/basic-functions
+      type: lesson
+    - lesson: intro/turtle
+      title: Cyklus For
+      type: lesson
+    - title: Tahák s užitečnými funkcemi
+      url: https://pyvec.github.io/cheatsheets/basic-functions/basic-functions-cs.pdf
+      type: cheatsheet
 
-- title: Řetězce
-  slug: def-str
+- slug: while-functions
+  title: While & Opakování cyklů
+  date: 2022-10-12
   materials:
-  - lesson: beginners/str
-  - lesson: beginners/str-index-slice
-  - lesson: beginners/str-methods
-  - lesson: beginners/fstring
-  - title: Řetězcový tahák
-    url: https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf
-    type: cheatsheet
+    - lesson: beginners/while
+      type: lesson
 
-- title: Definice funkcí
-  slug: def
+- slug: def
+  title: Vlastní funkce
+  date: 2022-10-19
   materials:
-  - lesson: beginners/def
-  - lesson: beginners/nested-traceback
-  - lesson: beginners/local-variables
+    - lesson: beginners/def
+      type: lesson
 
-- title: Chyby a moduly
-  slug: exc
+- slug: strings
+  title: Řetězce
+  date: 2022-10-26
   materials:
-  - lesson: beginners/exceptions
-  - lesson: beginners/modules
-  # XXX when homework is added, include lesson: beginners/circular-imports
-  - title: Výjimkový tahák
-    url: https://pyvec.github.io/cheatsheets/exceptions/exceptions-cs.pdf
-    type: cheatsheet
+    - lesson: beginners/str
+      type: lesson
+    - lesson: beginners/fstring
+      type: lesson
+    - title: Řetězcový tahák
+      url: https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf
+      type: cheatsheet
 
-- title: Rozhraní a testy
-  slug: tests
+- slug: practice
+  title: Procvičování & soubory
+  date: 2022-11-02
   materials:
-  - lesson: beginners/interfaces
-  - lesson: beginners/testing
-  - lesson: beginners/main-module
+    - title: Procvičíme si vše, co jsme se naučily
+      url: null
+      type: special
+    - lesson: beginners/files
+      type: lesson
+    - lesson: training/middle
+      type: lesson
 
-- title: Spolupráce a Open-Source
-  slug: foss
-  materials:
-  - lesson: git/collaboration
-  - lesson: git/ignoring
-  - title: Gitový tahák
-    url: https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf
-    type: cheatsheet
-
-- title: Seznamy
-  slug: list
+- slug: list
+  title: Seznamy
+  date: 2022-11-09
   materials:
   - lesson: beginners/list
   - lesson: beginners/tuple
-  - lesson: beginners/nested-list
   - title: Tahák na seznamy
     url: https://pyvec.github.io/cheatsheets/lists/lists-cs.pdf
     type: cheatsheet
 
-- title: Sekvence a soubory
-  slug: seq
+- slug: dict
+  title: Slovníky
+  date: 2022-11-16
   materials:
-  - lesson: beginners/range
-  - lesson: beginners/zip-enumerate
-  - lesson: beginners/files
+    - lesson: beginners/dict
+      type: lesson
+    - title: Slovníkový tahák
+      url: https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf
+      type: cheatsheet
 
-- title: Grafika
-  slug: pyglet
+- slug: exceptions
+  title: Výjimky, moduly
+  date: 2022-11-23
+  materials:
+    - lesson: beginners/exceptions
+    - lesson: beginners/modules
+    - lesson: beginners/circular-imports
+    - title: Výjimkový tahák
+      url: https://pyvec.github.io/cheatsheets/exceptions/exceptions-cs.pdf
+      type: cheatsheet
+
+- slug: class
+  title: Opakování & Třídy I
+  date: 2022-11-30
+  materials:
+    - lesson: beginners/class
+      type: lesson
+    - title: Tahák na třídy
+      url: https://pyvec.github.io/cheatsheets/classes/classes.pdf
+      type: cheatsheet
+
+- slug: inheritance
+  title: Třídy II & Dědičnost
+  date: 2022-12-07
+  materials:
+    - lesson: beginners/inheritance
+      type: lesson
+
+- slug: pyglet
+  title: Grafika
+  date: 2022-12-14
   materials:
   - lesson: intro/pyglet
   - lesson: projects/pong
@@ -129,30 +181,16 @@ sessions:
     url: https://pyvec.github.io/cheatsheets/pyglet/pyglet-basics-cs.pdf
     type: cheatsheet
 
-- title: Slovníky
-  slug: dict
+- slug: hackaton
+  title: Závěrečný projekt
   materials:
-  - lesson: beginners/dict
-  - lesson: intro/json
-  - lesson: projects/github-api
-  - lesson: beginners/dict-with-list-values
-  - title: Slovníkový tahák
-    url: https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf
-    type: cheatsheet
-
-- title: Třídy
-  slug: class
-  materials:
-  - lesson: beginners/class
-  - lesson: beginners/inheritance
-
-- title: Závěrečný projekt
-  slug: asteroids
-  materials:
-  - lesson: projects/asteroids
-  - title: Množinový tahák
-    url: https://pyvec.github.io/cheatsheets/sets/sets-cs.pdf
-    type: cheatsheet
-  - title: Tahák na geometrii a fyziku 2D her
-    url: https://pyvec.github.io/cheatsheets/game-physics/game-physics-cs.pdf
-    type: cheatsheet
+    - lesson: projects/asteroids
+      type: lesson
+    - lesson: projects/snake
+      type: lesson
+    - title: Množinový tahák
+      url: https://pyvec.github.io/cheatsheets/sets/sets-cs.pdf
+      type: cheatsheet
+    - title: Tahák na geometrii a fyziku 2D her
+      url: https://pyvec.github.io/cheatsheets/game-physics/game-physics-cs.pdf
+      type: cheatsheet

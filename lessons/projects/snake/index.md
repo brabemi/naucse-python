@@ -171,6 +171,11 @@ z existujících sní, nebo automaticky v pravidelných intervalech.
 Jídlo vykreslíme stejným způsobem jako hada (ve stejné funkci/metodě) a jako
 obrázek použijeme třeba [jablko]({{ static('apple.png')}}).
 
+{{ figure(
+    img=static('apple.png'),
+    alt="Jablko",
+) }}
+
 První závan grafiky :-)
 
 ## Čtverečky ven, grafiku sem
@@ -277,6 +282,63 @@ a jednoho za ním a podle toho vybrat ze slovníku ten správný obrázek.
 U každého kousku hada a kousku před i za ním tě budou zajímat jejich
 souřadnice, protože podle nich lze velmi snadno poznat, zda je zkoumaný kousek
 nalevo, napravo, nahoře, nebo dole.
+
+Když máš hada podle následujícího obrázku, na políčko (3, 2) patří
+kousek, na kterém se had plazí zleva nahoru – tedy `snake_tiles['left-top']`
+
+{{ figure(
+    img=static('tile-selection.svg'),
+    alt="Had na „šachovnici“ se souřadnicemi. Políčko (3, 2) je zvýrazněné a vedou z něj šipky doleva a nahoru, kudy had pokračuje.",
+) }}
+
+Na koncích hada je ve jménech obrázků místo směru `tail` pro ocas a `head` pro hlavu.
+
+Pro každé z políček budeš potřebovat zjistit, odkud a kam na něm had leze –
+tedy směr k *předchozí* a *následující* souřadnici:
+
+<table class="table">
+    <tr>
+        <th>Souřadnice</th>
+        <th>Předchozí</th>
+        <th>Směr k předchozí</th>
+        <th>Následující</th>
+        <th>Směr k následující</th>
+        <th></th>
+    </tr>
+    {% set data = [
+        (1, 2, 'tail', 'right'),
+        (2, 2, 'left', 'right'),
+        (3, 2, 'left', 'top'),
+        (3, 3, 'bottom', 'top'),
+        (3, 4, 'bottom', 'top'),
+        (3, 5, 'bottom', 'right'),
+        (4, 5, 'left', 'head'),
+    ] %}
+    {% for x, y, bef, aft in data %}
+        <tr>
+            <td>({{ x }}, {{ y }})</td>
+            <td>{% if loop.first %}<em>není</em>{% else %}
+                ({{ data[loop.index0-1][0] }}, {{ data[loop.index0-1][1] }})
+            {% endif %}</td>
+            <td><code>{{ bef }}</code></td>
+            <td>{% if loop.last %}<em>není</em>{% else %}
+                ({{ data[loop.index0+1][0] }}, {{ data[loop.index0+1][1] }})
+            {% endif %}</td>
+            <td><code>{{ aft }}</code></td>
+            <td>
+                <img
+                    src="{{ static('snake-tiles/' + bef + '-' + aft + '.png') }}"
+                    style="width: 1em"
+                    alt="{{ bef }}-{{ aft }}.png"
+                >
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+Potřebuješ počítači říct, jak ze souřadnic dvou políček, které jsou vedle sebe, zjistit směr od jednoho ke druhému.
+
+Například směr od (3, 2) k (2, 2) je doleva. Směr od (3, 2) k (3, 3) je nahoru. (Viz obrázek, nebo třetí řádek tabulky výše.)
 
 Způsobů, jak toho docílit, je celá řada a i když se to může zdát jako složitější
 úkol, vše potřebné k jeho vyřešení znáš.

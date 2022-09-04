@@ -4,20 +4,14 @@ attribution: Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (201
 license: cc-by-sa-40
 subpages:
     vscode:
-        title: Instalace Visual Studio Code
-        subtitle: Visual Studio Code
+        title: Nastavení Visual Studio Code
     atom:
-        title: Instalace Atomu
-        subtitle: Atom
+        title: Nastavení Atomu
     kate:
-        title: Instalace Kate
-        subtitle: Kate
+        title: Nastavení Kate
     gedit:
-        title: Instalace Geditu
-        subtitle: Gedit
+        title: Nastavení Geditu
     notepad-plus-plus:
-        title: Instalace Notepadu++
-        subtitle: Notepad++
+        title: Nastavení Notepadu++
     others:
         title: Nastavení editoru
-        subtitle: Nastavení

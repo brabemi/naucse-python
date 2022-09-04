@@ -1,6 +1,6 @@
 # Moduly
 
-Modul je v Pythonu něco, z čeho můžeš importovat.
+Modul je v Pythonu něco, z čeho můžeme importovat.
 Třeba z modulu `math` můžeš importovat funkci `sqrt`:
 
 ```python
@@ -47,7 +47,7 @@ print(math.cos(math.pi))
 A teď to hlavní!
 Můžeš vytvořit vlastní importovatelný modul
 a to jen tak, že uděláš pythonní soubor.
-Funkce, které v něm nadefinuješ, a globální proměnné,
+Funkce, které v něm nadefinuješ, a proměnné,
 které v něm nastavíš, pak budou k dispozici tam, kde modul naimportuješ.
 
 Zkus si to!
@@ -58,10 +58,12 @@ barva_travy = 'zelená'
 pocet_kotatek = 28
 
 def popis_stav():
-    return f'Tráva je {barva_travy}. Prohání se po ní {pocet_kotatek} koťátek'
+    return 'Tráva je {barva}. Prohání se po ní {pocet} koťátek'.format(
+        barva=barva_travy, pocet=pocet_kotatek)
 ```
 
-A pak do dalšího souboru, třeba `vypis.py`, napiš:
+
+A pak v dalším souboru, třeba `vypis.py`, napiš:
 
 ```python
 import louka
@@ -69,15 +71,15 @@ import louka
 print(louka.popis_stav())
 ```
 
-A pak spusť `vypis.py`:
+a pak spusť:
 
 ```console
 $ python vypis.py
 ```
 
 Příkaz `import` hledá soubory (mimo jiné) v adresáři,
-ve kterém je „hlavní modul” programu – tedy soubor
-který spouštíš (tady `vypis.py`).
+ve kterém je „hlavní modul” programu – tedy soubor,
+který spouštíš (u nás `vypis.py`).
 Oba soubory by proto měly být ve stejném adresáři.
 
 
@@ -88,10 +90,10 @@ Co přesně dělá příkaz `import louka`?
 Python najde příslušný soubor (`louka.py`) a provede v něm všechny příkazy,
 odshora dolů, jako v normálním Pythonním programu.
 Všechny globální proměnné (včetně nadefinovaných funkcí) pak dá k dispozici
-kódu, který importoval.
+kódu, který „louku“ importoval.
 
-Když pak stejný modul importuješ podruhé, už se neprovádí všechno znovu.
-Druhý import jen zpřístupní stejnou sadu proměnných/funkcí jako ten první.
+Když pak stejný modul importuješ podruhé, už se neprovádí všechno
+znovu – stejná sada proměnných se použije znovu.
 
 Zkus si to – na konci `louka.py` dopiš:
 
@@ -99,8 +101,7 @@ Zkus si to – na konci `louka.py` dopiš:
 print('Louka je zelená!')
 ```
 
-Spusť `python` (máš-li ho už spuštěný, ukonči a spusť znovu)
-a zadej v něm:
+A pak spusť `python` (máš-li ho už spuštěný, ukonči a spusť znovu), a zadej:
 
 ```pycon
 >>> print('První import:')
@@ -110,33 +111,24 @@ a zadej v něm:
 ```
 
 Výpis se objeví jen poprvé.
-Co víc, když teď soubor `louka.py` změníš, změny se do naimportovaného modulu
-nepromítnou.
-Aby se promítly, musíš Python zavřít a spustit znovu.
-(I proto je dobré pouštět programy ze souborů – při každém spuštění se
-znovu načte aktuální verze modulů.)
 
-Ale zpátky k volání `print`.
-Přijde ti trochu divné, že příkaz `import louka` něco vypíše na obrazovku?
-
-Když takhle modul při importu „dělá“ něco víc než jen nastavení proměnných
-a funkcí, říká se, že má *vedlejší efekt* (angl. *side effect*).
-Vedlejší efekt může být vypsání něčeho na obrazovku nebo do souboru,
-vykreslení okýnka na obrazovku, otázka na uživatele pomocí `input`, atp.
-
-V modulech připravených na importování se vedlejším efektům vyhýbej:
+Když takhle modul při importu „něco dělá“ (něco vypíše na obrazovku,
+zapíše do souboru, na něco se zeptá uživatele atp.), říká se,
+že má *vedlejší efekt* (angl. *side effect*).
+V modulech připravených na importování se vedlejším efektům vyhýbáme:
 úloha takového modulu je dát k dispozici *funkce*, které něco dělají,
-ne to udělat přímo.
+ne to udělat za nás.
 Všimni si například, že `import turtle` neukáže okýnko – to se objeví až po
 zavolání `turtle.forward()`.
-Importem si programátor připravuje nástroje; teprve zavoláním funkce je používá.
 
 Příkaz `print` proto radši z modulu zase smaž.
 
 
 ## Adresář pro každý projekt
 
-Od teď budeš občas psát větší projekty,
+Od teď budeme občas psát větší projekty,
 které budou obsahovat více souvisejících souborů.
-Pro každý takový projekt si udělej zvláštní adresář.
-Lépe se pak vyznáš v tom, ke kterému projektu který soubor patří.
+Je dobré pro každý takový projekt udělat
+zvláštní adresář.
+
+(A to samozřejmě znamená i zvláštní gitový repozitář.)

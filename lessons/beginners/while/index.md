@@ -1,15 +1,10 @@
 # While
 
-Kromě cyklu `for` máme ještě druhý typ cyklu: `while` (angl. *dokud*).
+Kromě cyklu `for` máme ještě druhý typ cyklu uvozený příkazem `while`
+(angl. *dokud*).
 Na rozdíl od `for`, kde *předem známe počet opakování*,
 se while používá, když cyklus závisí na nějaké podmínce.
-Tělo cyklu se opakuje, dokud je podmínka splněna.
-Zkus si naprogramovat následující postup pro zubaře:
-
-* Řekni, aby pacient řekl „Ááá“, a počkej na odpověď
-* Dokud pacient *ne*řekl „Ááá“:
-  * Vynadej pacientovi
-  * Znovu počkej na odpověď
+Tělo cyklu se opakuje, dokud je podmínka splněna. Například:
 
 ```python
 odpoved = input('Řekni Ááá! ')
@@ -21,10 +16,6 @@ while odpoved != 'Ááá':
 Ale pozor! Je velice jednoduché napsat cyklus,
 jehož podmínka bude splněna vždycky.
 Takový cyklus se bude opakovat donekonečna.
-
-* Dokud je pravda pravdivá:
-  * Napiš náhodné číslo
-  * Napiš hlášku
 
 ```python
 from random import randrange
@@ -56,7 +47,7 @@ print('Hotovo, ani to nebolelo.')
 ```
 
 Příkaz `break` se dá použít jenom v cyklu (`while` nebo `for`)
-a pokud máš víc cyklů zanořených v sobě, vyskočí jen z toho vnitřního.
+a pokud máme víc cyklů zanořených v sobě, vyskočí jen z toho vnitřního.
 
 ```python
 for i in range(10):  # Vnější cyklus

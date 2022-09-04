@@ -79,7 +79,7 @@ print(delka)
 ```
 
 To `len` je *funkce* (angl. *function*).
-Jak se takové funkce používají?
+Jak se takové funkce požívají?
 
 K tomu, abys funkci mohl{{a}} použít, potřebuješ znát její
 *jméno* – tady `len`.
