@@ -28,7 +28,7 @@ jobs:
         poetry install -E ghp-compiled
     - name: Compile the courses
       run: |
-        for slug in pyladies mi-pyt meta lessons; do
+        for slug in pyladies; do
           poetry run python -m naucse_render compile _compiled/$slug --slug $slug \
             --edit-repo-url https://github.com/${{ github.repository }} \
             --edit-repo-branch main
