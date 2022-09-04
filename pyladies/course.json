@@ -1,0 +1,1677 @@
+{
+    "api_version": [
+        0,
+        3
+    ],
+    "course": {
+        "default_time": {
+            "end": "20:00",
+            "start": "18:00"
+        },
+        "description": "Naučte se Python vážně od začátku. Žádné předchozí znalosti nejsou potřeba.",
+        "edit_info": {
+            "branch": "main",
+            "url": "https://github.com/brabemi/naucse-python"
+        },
+        "lessons": {
+            "beginners/and-or": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "and-or/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/and-or/index.md",
+                        "title": "Nebo anebo a",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/and-or/info.yml",
+                "static_files": {},
+                "title": "Nebo anebo a"
+            },
+            "beginners/basic-functions": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2019."
+                        ],
+                        "content": {
+                            "path": "basic-functions/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Funkce <code>input</code> vrací hodnotu, se kterou může program dál pracovat.\nZařadil bych ji tedy mezi „normální“ funkce.</p>\n<p>Jako argument bere <code>input</code> otázku, na kterou se uživatele zeptá.</p>\n<p>Návratová hodnota funkce <code>input</code> je řetězec s odpovědí uživatele.</p>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/basic-functions/index.md",
+                        "title": "Užitečné funkce",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/basic-functions/info.yml",
+                "static_files": {},
+                "title": "Užitečné funkce"
+            },
+            "beginners/circular-imports": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "circular-imports/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/circular-imports/index.md",
+                        "title": "Cyklické importy",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/circular-imports/info.yml",
+                "static_files": {},
+                "title": "Cyklické importy"
+            },
+            "beginners/class": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2015-2017."
+                        ],
+                        "content": {
+                            "path": "class/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">class</span> <span class=\"nc\">Kocka</span><span class=\"p\">:</span>\n    <span class=\"k\">def</span> <span class=\"fm\">__init__</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">):</span>         <span class=\"c1\"># Init funkce nemusi brat jako parametr</span>\n        <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">pocet_zivotu</span> <span class=\"o\">=</span> <span class=\"mi\">9</span>   <span class=\"c1\"># pocet zivotu, ten je pokazde 9.</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">zamnoukej</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">):</span>\n        <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;Mnau, mnau, mnauuu!&quot;</span><span class=\"p\">)</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">je_ziva</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">):</span>\n        <span class=\"k\">return</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">pocet_zivotu</span> <span class=\"o\">&gt;</span> <span class=\"mi\">0</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">uber_zivot</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">):</span>\n        <span class=\"k\">if</span> <span class=\"ow\">not</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">je_ziva</span><span class=\"p\">():</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;Nemuzes zabit uz mrtvou kocku!&quot;</span><span class=\"p\">)</span>\n        <span class=\"k\">else</span><span class=\"p\">:</span>\n            <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">pocet_zivotu</span> <span class=\"o\">-=</span> <span class=\"mi\">1</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">snez</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">jidlo</span><span class=\"p\">):</span>\n        <span class=\"k\">if</span> <span class=\"ow\">not</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">je_ziva</span><span class=\"p\">():</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;Je zbytecne krmit mrtvou kocku!&quot;</span><span class=\"p\">)</span>\n            <span class=\"k\">return</span>\n        <span class=\"k\">if</span> <span class=\"n\">jidlo</span> <span class=\"o\">==</span> <span class=\"s2\">&quot;ryba&quot;</span> <span class=\"ow\">and</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">pocet_zivotu</span> <span class=\"o\">&lt;</span> <span class=\"mi\">9</span><span class=\"p\">:</span>\n            <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">pocet_zivotu</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;Kocka spapala rybu a obnovil se ji jeden zivot.&quot;</span><span class=\"p\">)</span>\n        <span class=\"k\">else</span><span class=\"p\">:</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;Kocka se krmi.&quot;</span><span class=\"p\">)</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/class/index.md",
+                        "title": "Třídy",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/class/info.yml",
+                "static_files": {},
+                "title": "Třídy"
+            },
+            "beginners/cmdline": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017.",
+                            "Založeno na tutoriálu <a href=\"https://tutorial.djangogirls.org/en/intro_to_command_line/\">Django Girls</a>."
+                        ],
+                        "content": {
+                            "path": "cmdline/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"row side-by-side-commands\"><div class=\"col\">\n                <h4>Unix</h4><div class=\"highlight\"><pre><span></span><span class=\"gp\">$ </span><span class=\"nb\">cd</span> pyladies\n<span class=\"gp\">$ </span>mkdir <span class=\"nb\">test</span>\n<span class=\"gp\">$ </span>ls\n<span class=\"go\">test</span>\n</pre></div></div><div class=\"col\">\n                <h4>Windows</h4><div class=\"highlight\"><pre><span></span><span class=\"gp\">&gt; </span>cd pyladies<span class=\"gp\"></span>\n<span class=\"gp\">&gt; </span>mkdir test<span class=\"gp\"></span>\n<span class=\"gp\">&gt; </span>dir\n<span class=\"go\">05/08/2014 07:28 PM &lt;DIR&gt;  test</span>\n</pre></div></div></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/cmdline/index.md",
+                        "title": "Úvod do příkazové řádky",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/cmdline/info.yml",
+                "static_files": {
+                    "windows-cmd-properties.png": {
+                        "path": "cmdline/windows-cmd-properties.png"
+                    }
+                },
+                "title": "Úvod do příkazové řádky"
+            },
+            "beginners/comparisons": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "comparisons/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Taková proměnná se dá nastavit pomocí tohoto kódu:</p>\n<div class=\"highlight\"><pre><span></span><span class=\"n\">strana</span> <span class=\"o\">=</span> <span class=\"nb\">float</span><span class=\"p\">(</span><span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej stranu čtverce v centimetrech: &#39;</span><span class=\"p\">))</span>\n<span class=\"n\">cislo_je_spravne</span> <span class=\"o\">=</span> <span class=\"n\">strana</span> <span class=\"o\">&gt;</span> <span class=\"mi\">0</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/comparisons/index.md",
+                        "title": "Porovnávání",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/comparisons/info.yml",
+                "static_files": {},
+                "title": "Porovnávání"
+            },
+            "beginners/def": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "def/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">math</span> <span class=\"kn\">import</span> <span class=\"n\">pi</span>\n\n<span class=\"k\">def</span> <span class=\"nf\">obsah_elipsy</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">):</span>\n    <span class=\"k\">return</span> <span class=\"n\">pi</span> <span class=\"o\">*</span> <span class=\"n\">a</span> <span class=\"o\">*</span> <span class=\"n\">b</span>\n\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obsah elipsy s osami 3 cm a 5 cm je&#39;</span><span class=\"p\">,</span> <span class=\"n\">obsah_elipsy</span><span class=\"p\">(</span><span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">),</span> <span class=\"s1\">&#39;cm2&#39;</span><span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<ul>\n<li><code>pi</code> je globální – nepřiřazuje se do ní ve funkci;\nje „vidět“ v celém programu.</li>\n<li>Proměnné <code>obsah</code> jsou v programu dvě – jedna globální,\na jedna je lokální pro funkci <code>obsah_elipsy</code>,\nprotože do ní tahle funkce přiřazuje.</li>\n<li>Proměnné <code>a</code> jsou taky dvě, podobně jako <code>obsah</code>.\nTady byl chyták: příkaz <code>a = a + 3</code> nemá žádný smysl;\ndo <code>a</code> se sice uloží větší číslo, ale vzápětí funkce <code>obsah_elipsy</code> skončí\na její lokální proměnná <code>a</code> přestane existovat.</li>\n<li>Proměnná <code>b</code> je jenom lokální – jako argument funkce <code>obsah_elipsy</code>.</li>\n</ul>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/def/index.md",
+                        "title": "Vlastní funkce",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/def/info.yml",
+                "static_files": {},
+                "title": "Vlastní funkce"
+            },
+            "beginners/dict": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2015-2017."
+                        ],
+                        "content": {
+                            "path": "dict/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/dict/index.md",
+                        "title": "Slovníky",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/dict/info.yml",
+                "static_files": {},
+                "title": "Slovníky"
+            },
+            "beginners/exceptions": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "exceptions/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Možné řešení pro geometrickou kalkulačku:</p>\n<div class=\"highlight\"><pre><span></span><span class=\"k\">while</span> <span class=\"kc\">True</span><span class=\"p\">:</span>\n    <span class=\"k\">try</span><span class=\"p\">:</span>\n        <span class=\"n\">strana</span> <span class=\"o\">=</span> <span class=\"nb\">float</span><span class=\"p\">(</span><span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej stranu čtverce v centimetrech: &#39;</span><span class=\"p\">))</span>\n    <span class=\"k\">except</span> <span class=\"ne\">ValueError</span><span class=\"p\">:</span>\n        <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;To nebylo číslo!&#39;</span><span class=\"p\">)</span>\n    <span class=\"k\">else</span><span class=\"p\">:</span>\n        <span class=\"k\">if</span> <span class=\"n\">strana</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">0</span><span class=\"p\">:</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;To nedává smysl!&#39;</span><span class=\"p\">)</span>\n        <span class=\"k\">else</span><span class=\"p\">:</span>\n            <span class=\"k\">break</span>\n\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obvod čtverce se stranou&#39;</span><span class=\"p\">,</span> <span class=\"n\">strana</span><span class=\"p\">,</span> <span class=\"s1\">&#39;je&#39;</span><span class=\"p\">,</span> <span class=\"mi\">4</span> <span class=\"o\">*</span> <span class=\"n\">strana</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm&#39;</span><span class=\"p\">)</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obsah čtverce se stranou&#39;</span><span class=\"p\">,</span> <span class=\"n\">strana</span><span class=\"p\">,</span> <span class=\"s1\">&#39;je&#39;</span><span class=\"p\">,</span> <span class=\"n\">strana</span> <span class=\"o\">*</span> <span class=\"n\">strana</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm2&#39;</span><span class=\"p\">)</span>\n</pre></div><p>Možné řešení pro 1-D piškvorky:</p>\n<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">tah_hrace</span><span class=\"p\">(</span><span class=\"n\">pole</span><span class=\"p\">):</span>\n    <span class=\"k\">while</span> <span class=\"kc\">True</span><span class=\"p\">:</span>\n        <span class=\"k\">try</span><span class=\"p\">:</span>\n            <span class=\"n\">pozice</span> <span class=\"o\">=</span> <span class=\"nb\">int</span><span class=\"p\">(</span><span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Kam chceš hrát? (0..19) &#39;</span><span class=\"p\">))</span>\n        <span class=\"k\">except</span> <span class=\"ne\">ValueError</span><span class=\"p\">:</span>\n            <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;To není číslo!&#39;</span><span class=\"p\">)</span>\n        <span class=\"k\">else</span><span class=\"p\">:</span>\n            <span class=\"k\">if</span> <span class=\"n\">pozice</span> <span class=\"o\">&lt;</span> <span class=\"mi\">0</span> <span class=\"ow\">or</span> <span class=\"n\">pozice</span> <span class=\"o\">&gt;=</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">pole</span><span class=\"p\">):</span>\n                <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Nemůžeš hrát venku z pole!&#39;</span><span class=\"p\">)</span>\n            <span class=\"k\">elif</span> <span class=\"n\">pole</span><span class=\"p\">[</span><span class=\"n\">pozice</span><span class=\"p\">]</span> <span class=\"o\">!=</span> <span class=\"s1\">&#39;-&#39;</span><span class=\"p\">:</span>\n                <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Tam není volno!&#39;</span><span class=\"p\">)</span>\n            <span class=\"k\">else</span><span class=\"p\">:</span>\n                <span class=\"k\">break</span>\n\n    <span class=\"n\">pole</span> <span class=\"o\">=</span> <span class=\"n\">pole</span><span class=\"p\">[:</span><span class=\"n\">pozice</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"s1\">&#39;o&#39;</span> <span class=\"o\">+</span> <span class=\"n\">pole</span><span class=\"p\">[</span><span class=\"n\">pozice</span> <span class=\"o\">+</span> <span class=\"mi\">1</span><span class=\"p\">:]</span>\n    <span class=\"k\">return</span> <span class=\"n\">pole</span>\n\n\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">tah_hrace</span><span class=\"p\">(</span><span class=\"s1\">&#39;-x----&#39;</span><span class=\"p\">))</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/exceptions/index.md",
+                        "title": "Výjimky",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/exceptions/info.yml",
+                "static_files": {},
+                "title": "Výjimky"
+            },
+            "beginners/files": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "files/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Každý řádek končí znakem nového řádku, <code>'\\n'</code>,\nkterý možná znáš ze <a href=\"naucse:page?lesson=beginners/str\">sekce o řetězcích</a>.\nPři procházení souboru Python tento znak nechává na konci řetězce <code>radek</code> ¹.\nFunkce <code>print</code> pak přidá další nový řádek, protože ta na konci\nvýpisu vždycky odřádkovává – pokud nedostane argument <code>end=''</code>.</p>\n<hr>\n<p>¹ Proč to dělá? Kdyby <code>'\\n'</code> na konci řádků nebylo,\nnedalo by se např. dobře rozlišit, jestli poslední řádek\nkončí na <code>'\\n'</code></p>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/files/index.md",
+                        "title": "Soubory",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/files/info.yml",
+                "static_files": {},
+                "title": "Soubory"
+            },
+            "beginners/first-steps": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2019.",
+                            "Část této kapitoly je založena na materiálech <a href=\"https://djangogirls.org/\">DjangoGirls</a>.",
+                            "Část této kapitoly je založena na kurzu <a href=\"https://github.com/ggcarrots/django-carrots\">Geek Girls Carrots</a>.",
+                            "Původní DjangoGirls tutoriál přeložila do češtiny skupina dobrovolníků.\nPoděkování patří hlavně: Davidovi (dakf), Kristýně Kumpánové,\nVeronice Gabrielové, Tomáši Ehrlichovi, Aničce Jaegerové,\nMatějovi Stuchlíkovi, Filipovi Sivákovi a Juraji M. Bezručkovi."
+                        ],
+                        "content": {
+                            "path": "first-steps/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/first-steps/index.md",
+                        "title": "První krůčky",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/first-steps/info.yml",
+                "static_files": {},
+                "title": "První krůčky"
+            },
+            "beginners/fstring": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2018-2019."
+                        ],
+                        "content": {
+                            "path": "fstring/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "license_code": "cc0",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/fstring/index.md",
+                        "title": "Šablony (formátovací řetězce)",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/fstring/info.yml",
+                "static_files": {},
+                "title": "Šablony (formátovací řetězce)"
+            },
+            "beginners/functions": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2019."
+                        ],
+                        "content": {
+                            "path": "functions/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Funkce <code>print</code> zavolaná bez argumentů napíše prázdný řádek.</p>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/functions/index.md",
+                        "title": "Funkce",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/functions/info.yml",
+                "static_files": {
+                    "call-anatomy.svg": {
+                        "path": "functions/call-anatomy.svg"
+                    }
+                },
+                "title": "Funkce"
+            },
+            "beginners/hello-world": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "hello-world/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/hello-world/index.md",
+                        "title": "První program",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/hello-world/info.yml",
+                "static_files": {},
+                "title": "První program"
+            },
+            "beginners/inheritance": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2015-2017."
+                        ],
+                        "content": {
+                            "path": "inheritance/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/inheritance/index.md",
+                        "title": "Dědičnost",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/inheritance/info.yml",
+                "static_files": {},
+                "title": "Dědičnost"
+            },
+            "beginners/install": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "install/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install/index.md",
+                        "title": "Instalace Pythonu",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "linux": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "install/linux.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "linux",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install/linux.md",
+                        "title": "Instalace Pythonu - Linux",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "macos": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "install/macos.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "macos",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install/macos.md",
+                        "title": "Instalace Pythonu - macOS",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "windows": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "install/windows.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "windows",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install/windows.md",
+                        "title": "Instalace Pythonu - Windows",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/install/info.yml",
+                "static_files": {
+                    "windows_32v64-bit.png": {
+                        "path": "install/windows_32v64-bit.png"
+                    },
+                    "windows_add_python_to_path.png": {
+                        "path": "install/windows_add_python_to_path.png"
+                    }
+                },
+                "title": "Instalace Pythonu"
+            },
+            "beginners/install-editor": {
+                "pages": {
+                    "atom": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/atom.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "atom",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/atom.md",
+                        "title": "Nastavení Atomu",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "gedit": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/gedit.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "gedit",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/gedit.md",
+                        "title": "Nastavení Geditu",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/index.md",
+                        "title": "Instalace editoru",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "kate": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/kate.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "kate",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/kate.md",
+                        "title": "Nastavení Kate",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "notepad-plus-plus": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/notepad-plus-plus.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "notepad-plus-plus",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/notepad-plus-plus.md",
+                        "title": "Nastavení Notepadu++",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "others": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/others.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "others",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/others.md",
+                        "title": "Nastavení editoru",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    },
+                    "vscode": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017, Tomáš Roj (2019)"
+                        ],
+                        "content": {
+                            "path": "install-editor/vscode.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "vscode",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/install-editor/vscode.md",
+                        "title": "Nastavení Visual Studio Code",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/install-editor/info.yml",
+                "static_files": {
+                    "gedit_indent.png": {
+                        "path": "install-editor/gedit_indent.png"
+                    },
+                    "gedit_linenums.png": {
+                        "path": "install-editor/gedit_linenums.png"
+                    },
+                    "gedit_prefs.png": {
+                        "path": "install-editor/gedit_prefs.png"
+                    }
+                },
+                "title": "Instalace editoru"
+            },
+            "beginners/list": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "list/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">vyber_chybne</span><span class=\"p\">(</span><span class=\"n\">seznam</span><span class=\"p\">):</span>\n    <span class=\"n\">vysledek</span> <span class=\"o\">=</span> <span class=\"p\">[]</span>\n    <span class=\"k\">for</span> <span class=\"n\">zaznam</span> <span class=\"ow\">in</span> <span class=\"n\">seznam</span><span class=\"p\">:</span>\n        <span class=\"n\">jmeno_a_prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">zaznam</span><span class=\"o\">.</span><span class=\"n\">split</span><span class=\"p\">(</span><span class=\"s1\">&#39; &#39;</span><span class=\"p\">)</span>\n        <span class=\"n\">jmeno</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n        <span class=\"n\">prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span>\n        <span class=\"k\">if</span> <span class=\"n\">jmeno</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">islower</span><span class=\"p\">()</span> <span class=\"ow\">or</span> <span class=\"n\">prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">islower</span><span class=\"p\">():</span>\n            <span class=\"n\">vysledek</span><span class=\"o\">.</span><span class=\"n\">append</span><span class=\"p\">(</span><span class=\"n\">zaznam</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">vysledek</span>\n\n<span class=\"k\">def</span> <span class=\"nf\">vyber_spravne</span><span class=\"p\">(</span><span class=\"n\">seznam</span><span class=\"p\">):</span>\n    <span class=\"n\">vysledek</span> <span class=\"o\">=</span> <span class=\"p\">[]</span>\n    <span class=\"k\">for</span> <span class=\"n\">zaznam</span> <span class=\"ow\">in</span> <span class=\"n\">seznam</span><span class=\"p\">:</span>\n        <span class=\"n\">jmeno_a_prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">zaznam</span><span class=\"o\">.</span><span class=\"n\">split</span><span class=\"p\">(</span><span class=\"s1\">&#39; &#39;</span><span class=\"p\">)</span>\n        <span class=\"n\">jmeno</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n        <span class=\"n\">prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span>\n        <span class=\"k\">if</span> <span class=\"ow\">not</span> <span class=\"n\">jmeno</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">islower</span><span class=\"p\">()</span> <span class=\"ow\">and</span> <span class=\"ow\">not</span> <span class=\"n\">prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">islower</span><span class=\"p\">():</span>\n            <span class=\"n\">vysledek</span><span class=\"o\">.</span><span class=\"n\">append</span><span class=\"p\">(</span><span class=\"n\">zaznam</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">vysledek</span>\n\n<span class=\"k\">def</span> <span class=\"nf\">oprav_zaznamy</span><span class=\"p\">(</span><span class=\"n\">seznam</span><span class=\"p\">):</span>\n    <span class=\"n\">vysledek</span> <span class=\"o\">=</span> <span class=\"p\">[]</span>\n    <span class=\"k\">for</span> <span class=\"n\">zaznam</span> <span class=\"ow\">in</span> <span class=\"n\">seznam</span><span class=\"p\">:</span>\n        <span class=\"n\">jmeno_a_prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">zaznam</span><span class=\"o\">.</span><span class=\"n\">split</span><span class=\"p\">(</span><span class=\"s1\">&#39; &#39;</span><span class=\"p\">)</span>\n        <span class=\"n\">jmeno</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n        <span class=\"n\">prijmeni</span> <span class=\"o\">=</span> <span class=\"n\">jmeno_a_prijmeni</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span>\n        <span class=\"n\">vysledek</span><span class=\"o\">.</span><span class=\"n\">append</span><span class=\"p\">(</span><span class=\"n\">jmeno</span><span class=\"o\">.</span><span class=\"n\">capitalize</span><span class=\"p\">()</span> <span class=\"o\">+</span> <span class=\"s1\">&#39; &#39;</span> <span class=\"o\">+</span> <span class=\"n\">prijmeni</span><span class=\"o\">.</span><span class=\"n\">capitalize</span><span class=\"p\">())</span>\n    <span class=\"k\">return</span> <span class=\"n\">vysledek</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/list/index.md",
+                        "title": "Seznamy",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/list/info.yml",
+                "static_files": {},
+                "title": "Seznamy"
+            },
+            "beginners/modules": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "modules/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/modules/index.md",
+                        "title": "Moduly",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/modules/info.yml",
+                "static_files": {},
+                "title": "Moduly"
+            },
+            "beginners/print": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "print/index.html"
+                        },
+                        "css": ".err-lineno {\n    display: inline-block;\n    background-color: #FCC;\n}\n.err-exctype {\n    display: inline-block;\n    background-color: #CFC;\n}\n",
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/print/index.md",
+                        "title": "Print a chybové hlášky",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/print/info.yml",
+                "static_files": {},
+                "title": "Print a chybové hlášky"
+            },
+            "beginners/str": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017.",
+                            "Jako jeden z příkladů byl použit úryvek z povídky „Chlap, děd, vnuk, pes a hrob“ Jana Wericha."
+                        ],
+                        "content": {
+                            "path": "str/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Nedostala – dostala jsi <em>šesté</em> písmeno.</p>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Čokoláda&#39;</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">])</span>  <span class=\"c1\"># → a</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Čokoláda&#39;</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"mi\">2</span><span class=\"p\">])</span>  <span class=\"c1\"># → d</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Čokoláda&#39;</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"mi\">3</span><span class=\"p\">])</span>  <span class=\"c1\"># → á</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Čokoláda&#39;</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"mi\">4</span><span class=\"p\">])</span>  <span class=\"c1\"># → l</span>\n</pre></div><p>Záporná čísla vybírají písmenka od konce.</p>\n<div class=\"highlight\"><pre><code>   [0] [1] [2] [3] [4] [5] [6] [7]\n   [-8][-7][-6][-5][-4][-3][-2][-1]\n  ╭───┬───┬───┬───┬───┬───┬───┬───╮\n  │ Č │ o │ k │ o │ l │ á │ d │ a │\n  ╰───┴───┴───┴───┴───┴───┴───┴───╯</code></pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"n\">jmeno</span> <span class=\"o\">=</span> <span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej jméno: &#39;</span><span class=\"p\">)</span>\n<span class=\"n\">prijmeni</span> <span class=\"o\">=</span> <span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej příjmení &#39;</span><span class=\"p\">)</span>\n<span class=\"n\">inicialy</span> <span class=\"o\">=</span> <span class=\"n\">jmeno</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"n\">prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Iniciály:&#39;</span><span class=\"p\">,</span> <span class=\"n\">inicialy</span><span class=\"o\">.</span><span class=\"n\">upper</span><span class=\"p\">())</span>\n</pre></div><p>Způsobů, jak takový program napsat, je více.\nLze například zavolat <code>upper()</code> dvakrát – zvlášť na jméno a zvlášť na příjmení.</p>\n<p>Nebo to jde zapsat i takto –\nmetoda se dá volat na výsledku jakéhokoli výrazu:</p>\n<div class=\"highlight\"><pre><span></span><span class=\"n\">jmeno</span> <span class=\"o\">=</span> <span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej jméno: &#39;</span><span class=\"p\">)</span>\n<span class=\"n\">prijmeni</span> <span class=\"o\">=</span> <span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Zadej příjmení &#39;</span><span class=\"p\">)</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Iniciály:&#39;</span><span class=\"p\">,</span> <span class=\"p\">(</span><span class=\"n\">jmeno</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"n\">prijmeni</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">])</span><span class=\"o\">.</span><span class=\"n\">upper</span><span class=\"p\">())</span>\n</pre></div><p>Doporučuji spíš první způsob, ten se smysluplnými názvy proměnných.\nJe sice delší, ale mnohem přehlednější.</p>"
+                            },
+                            {
+                                "content": "<p>Zápis <code>retezec[5:]</code> vybere <em>podřetězec</em> od znaku číslo 5 dál.</p>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">zamen</span><span class=\"p\">(</span><span class=\"n\">retezec</span><span class=\"p\">,</span> <span class=\"n\">pozice</span><span class=\"p\">,</span> <span class=\"n\">znak</span><span class=\"p\">):</span>\n    <span class=\"sd\">&quot;&quot;&quot;Zamění znak na dané pozici</span>\n\n<span class=\"sd\">    Vrátí řetězec, který má na dané pozici daný znak;</span>\n<span class=\"sd\">    jinak je stejný jako vstupní retezec</span>\n<span class=\"sd\">    &quot;&quot;&quot;</span>\n\n    <span class=\"k\">return</span> <span class=\"n\">retezec</span><span class=\"p\">[:</span><span class=\"n\">pozice</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"n\">znak</span> <span class=\"o\">+</span> <span class=\"n\">retezec</span><span class=\"p\">[</span><span class=\"n\">pozice</span> <span class=\"o\">+</span> <span class=\"mi\">1</span><span class=\"p\">:]</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/str/index.md",
+                        "title": "Řetězce",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/str/info.yml",
+                "static_files": {},
+                "title": "Řetězce"
+            },
+            "beginners/tuple": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "tuple/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/tuple/index.md",
+                        "title": "N-tice",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/tuple/info.yml",
+                "static_files": {},
+                "title": "N-tice"
+            },
+            "beginners/variables": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "variables/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<p>Program, který vypíše správný výsledek, může vypadat třeba takhle:</p>\n<div class=\"highlight\"><pre><span></span><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obvod čtverce se stranou 356 cm je&#39;</span><span class=\"p\">,</span> <span class=\"mi\">4</span> <span class=\"o\">*</span> <span class=\"mi\">356</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm&#39;</span><span class=\"p\">)</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obsah čtverce se stranou 356 cm je&#39;</span><span class=\"p\">,</span> <span class=\"mi\">356</span> <span class=\"o\">*</span> <span class=\"mi\">356</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm2&#39;</span><span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obvod čtverce se stranou 123 cm je&#39;</span><span class=\"p\">,</span> <span class=\"mi\">4</span> <span class=\"o\">*</span> <span class=\"mi\">123</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm&#39;</span><span class=\"p\">)</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Obsah čtverce se stranou 123 cm je&#39;</span><span class=\"p\">,</span> <span class=\"mi\">123</span> <span class=\"o\">*</span> <span class=\"mi\">123</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cm2&#39;</span><span class=\"p\">)</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/variables/index.md",
+                        "title": "Proměnné",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/variables/info.yml",
+                "static_files": {},
+                "title": "Proměnné"
+            },
+            "beginners/venv-setup": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2018."
+                        ],
+                        "content": {
+                            "path": "venv-setup/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/beginners/venv-setup/index.md",
+                        "title": "Nastavení prostředí",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/venv-setup/info.yml",
+                "static_files": {
+                    "dirs.png": {
+                        "path": "venv-setup/dirs.png"
+                    }
+                },
+                "title": "Nastavení prostředí"
+            },
+            "beginners/while": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "while/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">random</span> <span class=\"kn\">import</span> <span class=\"n\">randrange</span>\n\n<span class=\"n\">soucet</span> <span class=\"o\">=</span> <span class=\"mi\">0</span>\n<span class=\"k\">while</span> <span class=\"n\">soucet</span> <span class=\"o\">&lt;</span> <span class=\"mi\">21</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Máš&#39;</span><span class=\"p\">,</span> <span class=\"n\">soucet</span><span class=\"p\">,</span> <span class=\"s1\">&#39;bodů&#39;</span><span class=\"p\">)</span>\n    <span class=\"n\">odpoved</span> <span class=\"o\">=</span> <span class=\"nb\">input</span><span class=\"p\">(</span><span class=\"s1\">&#39;Otočit kartu? &#39;</span><span class=\"p\">)</span>\n    <span class=\"k\">if</span> <span class=\"n\">odpoved</span> <span class=\"o\">==</span> <span class=\"s1\">&#39;ano&#39;</span><span class=\"p\">:</span>\n        <span class=\"n\">karta</span> <span class=\"o\">=</span> <span class=\"n\">randrange</span><span class=\"p\">(</span><span class=\"mi\">2</span><span class=\"p\">,</span> <span class=\"mi\">11</span><span class=\"p\">)</span>\n        <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Otočila jsi&#39;</span><span class=\"p\">,</span> <span class=\"n\">karta</span><span class=\"p\">)</span>\n        <span class=\"n\">soucet</span> <span class=\"o\">=</span> <span class=\"n\">soucet</span> <span class=\"o\">+</span> <span class=\"n\">karta</span>\n    <span class=\"k\">elif</span> <span class=\"n\">odpoved</span> <span class=\"o\">==</span> <span class=\"s1\">&#39;ne&#39;</span><span class=\"p\">:</span>\n        <span class=\"k\">break</span>\n    <span class=\"k\">else</span><span class=\"p\">:</span>\n        <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Nerozumím! Odpovídej &quot;ano&quot;, nebo &quot;ne&quot;&#39;</span><span class=\"p\">)</span>\n\n<span class=\"k\">if</span> <span class=\"n\">soucet</span> <span class=\"o\">==</span> <span class=\"mi\">21</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Gratuluji! Vyhrála jsi!&#39;</span><span class=\"p\">)</span>\n<span class=\"k\">elif</span> <span class=\"n\">soucet</span> <span class=\"o\">&gt;</span> <span class=\"mi\">21</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Smůla!&#39;</span><span class=\"p\">,</span> <span class=\"n\">soucet</span><span class=\"p\">,</span> <span class=\"s1\">&#39;bodů je moc!&#39;</span><span class=\"p\">)</span>\n<span class=\"k\">else</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;Chybělo jen&#39;</span><span class=\"p\">,</span> <span class=\"mi\">21</span> <span class=\"o\">-</span> <span class=\"n\">soucet</span><span class=\"p\">,</span> <span class=\"s1\">&#39;bodů!&#39;</span><span class=\"p\">)</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/beginners/while/index.md",
+                        "title": "Cyklus While",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/beginners/while/info.yml",
+                "static_files": {},
+                "title": "Cyklus While"
+            },
+            "intro/pyglet": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2015-2017.",
+                            "Ikonku hada vytvořil Martin Berube."
+                        ],
+                        "content": {
+                            "path": "pyglet/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/intro/pyglet/index.md",
+                        "title": "Grafika",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/intro/pyglet/info.yml",
+                "static_files": {
+                    "had.gif": {
+                        "path": "pyglet/had.gif"
+                    },
+                    "had.png": {
+                        "path": "pyglet/had.png"
+                    },
+                    "had2.png": {
+                        "path": "pyglet/had2.png"
+                    },
+                    "pong.py": {
+                        "path": "pyglet/pong.py"
+                    }
+                },
+                "title": "Grafika"
+            },
+            "intro/turtle": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2014-2017."
+                        ],
+                        "content": {
+                            "path": "turtle/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">100</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">100</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">20</span><span class=\"p\">)</span>\n\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">20</span><span class=\"p\">)</span>\n\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n<span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n<span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<p>Příkaz <code>for</code> opakuje část programu.\nOpakují se příkazy, které jsou pod <code>for</code>-em odsazené.\nPodobně jako se <code>if</code> vztahuje jen na odsazené příkazy pod ním.</p>\n<p>Příkaz <code>for x in range(n):</code> opakuje příkazy pod ním <var>n</var>-krát\na proměnnou <code>x</code> nastaví postupně na čísla od 0 do <var>n</var>-1.</p>\n<p>Příkaz <code>for x in a, b, c, d, ...:</code> opakuje příkazy pod ním;\nproměnnou <code>x</code> nastavuje postupně na <var>a</var>, <var>b</var>,\n<var>c</var> <var>d</var>, ...</p>"
+                            },
+                            {
+                                "content": "<p>Příkaz <code>soucet = soucet + cislo</code> vypočítá hodnotu\n<code>soucet + cislo</code>, tedy přičte aktuální číslo k součtu\na výsledek uloží do proměnné <code>soucet</code>.\nNová hodnota součtu se pak použije v dalším průchodu cyklem.</p>\n<p>Na začátku je součet 0 a na konci se součet všech čísel vypíše.</p>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"mi\">4</span><span class=\"p\">):</span>\n    <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n    <span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">penup</span><span class=\"p\">,</span> <span class=\"n\">pendown</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"mi\">10</span><span class=\"p\">):</span>\n    <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">10</span><span class=\"p\">)</span>\n    <span class=\"n\">penup</span><span class=\"p\">()</span>\n    <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">5</span><span class=\"p\">)</span>\n    <span class=\"n\">pendown</span><span class=\"p\">()</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">penup</span><span class=\"p\">,</span> <span class=\"n\">pendown</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"mi\">20</span><span class=\"p\">):</span>\n    <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"n\">i</span><span class=\"p\">)</span>\n    <span class=\"n\">penup</span><span class=\"p\">()</span>\n    <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">5</span><span class=\"p\">)</span>\n    <span class=\"n\">pendown</span><span class=\"p\">()</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">turtle</span> <span class=\"kn\">import</span> <span class=\"n\">forward</span><span class=\"p\">,</span> <span class=\"n\">left</span><span class=\"p\">,</span> <span class=\"n\">right</span><span class=\"p\">,</span> <span class=\"n\">speed</span><span class=\"p\">,</span> <span class=\"n\">exitonclick</span>\n\n<span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"mi\">3</span><span class=\"p\">):</span>\n    <span class=\"k\">for</span> <span class=\"n\">j</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"mi\">4</span><span class=\"p\">):</span>\n        <span class=\"n\">forward</span><span class=\"p\">(</span><span class=\"mi\">50</span><span class=\"p\">)</span>\n        <span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">90</span><span class=\"p\">)</span>\n    <span class=\"n\">left</span><span class=\"p\">(</span><span class=\"mi\">20</span><span class=\"p\">)</span>\n\n<span class=\"n\">exitonclick</span><span class=\"p\">()</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/intro/turtle/index.md",
+                        "title": "Želva a cykly",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/intro/turtle/info.yml",
+                "static_files": {
+                    "turtle-dashed.png": {
+                        "path": "turtle/turtle-dashed.png"
+                    },
+                    "turtle-dashed2.png": {
+                        "path": "turtle/turtle-dashed2.png"
+                    },
+                    "turtle-hexagons.png": {
+                        "path": "turtle/turtle-hexagons.png"
+                    },
+                    "turtle-rect.png": {
+                        "path": "turtle/turtle-rect.png"
+                    },
+                    "turtle-square.png": {
+                        "path": "turtle/turtle-square.png"
+                    },
+                    "turtle-squares.png": {
+                        "path": "turtle/turtle-squares.png"
+                    },
+                    "turtle-stairs.png": {
+                        "path": "turtle/turtle-stairs.png"
+                    }
+                },
+                "title": "Želva a cykly"
+            },
+            "projects/asteroids": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Brno napsal Petr Viktorin, 2015-2017."
+                        ],
+                        "content": {
+                            "path": "asteroids/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/projects/asteroids/index.md",
+                        "title": "Asteroids",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/projects/asteroids/info.yml",
+                "static_files": {
+                    "screenshot.png": {
+                        "path": "asteroids/screenshot.png"
+                    }
+                },
+                "title": "Asteroids"
+            },
+            "projects/pong": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Praha napsal Oskar Hollmann s použitím kódu Petra Viktorina, 2016."
+                        ],
+                        "content": {
+                            "path": "pong/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">vykresli</span><span class=\"p\">():</span>\n    <span class=\"o\">...</span>\n    <span class=\"c1\"># Vykresleni micku</span>\n    <span class=\"n\">nakresli_obdelnik</span><span class=\"p\">(</span>\n        <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">-</span> <span class=\"n\">VELIKOST_MICE</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n        <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span> <span class=\"o\">-</span> <span class=\"n\">VELIKOST_MICE</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n        <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"n\">VELIKOST_MICE</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n        <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"n\">VELIKOST_MICE</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n    <span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">vykresli</span><span class=\"p\">():</span>\n    <span class=\"o\">...</span>\n    <span class=\"c1\"># palky - udelame si seznam souradnic palek a pro kazdou dvojici souradnic</span>\n    <span class=\"c1\"># v tom seznamu palku vykreslime</span>\n    <span class=\"k\">for</span> <span class=\"n\">x</span><span class=\"p\">,</span> <span class=\"n\">y</span> <span class=\"ow\">in</span> <span class=\"p\">[(</span><span class=\"mi\">0</span><span class=\"p\">,</span> <span class=\"n\">pozice_palek</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]),</span> <span class=\"p\">(</span><span class=\"n\">SIRKA</span><span class=\"p\">,</span> <span class=\"n\">pozice_palek</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">])]:</span>\n        <span class=\"n\">nakresli_obdelnik</span><span class=\"p\">(</span>\n            <span class=\"n\">x</span> <span class=\"o\">-</span> <span class=\"n\">TLOUSTKA_PALKY</span><span class=\"p\">,</span>\n            <span class=\"n\">y</span> <span class=\"o\">-</span> <span class=\"n\">DELKA_PALKY</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n            <span class=\"n\">x</span> <span class=\"o\">+</span> <span class=\"n\">TLOUSTKA_PALKY</span><span class=\"p\">,</span>\n            <span class=\"n\">y</span> <span class=\"o\">+</span> <span class=\"n\">DELKA_PALKY</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n        <span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">vykresli</span><span class=\"p\">():</span>\n    <span class=\"o\">...</span>\n    <span class=\"c1\"># prerusovana pulici cara - slozena ze spousty malych obdelnicku</span>\n    <span class=\"k\">for</span> <span class=\"n\">y</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"n\">DELKA_PULICI_CARKY</span> <span class=\"o\">//</span> <span class=\"mi\">2</span><span class=\"p\">,</span> <span class=\"n\">VYSKA</span><span class=\"p\">,</span> <span class=\"n\">DELKA_PULICI_CARKY</span> <span class=\"o\">*</span> <span class=\"mi\">2</span><span class=\"p\">):</span>\n        <span class=\"n\">nakresli_obdelnik</span><span class=\"p\">(</span>\n            <span class=\"n\">SIRKA</span> <span class=\"o\">//</span> <span class=\"mi\">2</span> <span class=\"o\">-</span> <span class=\"mi\">1</span><span class=\"p\">,</span>\n            <span class=\"n\">y</span><span class=\"p\">,</span>\n            <span class=\"n\">SIRKA</span> <span class=\"o\">//</span> <span class=\"mi\">2</span> <span class=\"o\">+</span> <span class=\"mi\">1</span><span class=\"p\">,</span>\n            <span class=\"n\">y</span> <span class=\"o\">+</span> <span class=\"n\">DELKA_PULICI_CARKY</span>\n        <span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"k\">def</span> <span class=\"nf\">vykresli</span><span class=\"p\">():</span>\n    <span class=\"o\">...</span>\n    <span class=\"c1\"># A nakonec vypiseme skore obou hracu</span>\n    <span class=\"n\">nakresli_text</span><span class=\"p\">(</span>\n        <span class=\"nb\">str</span><span class=\"p\">(</span><span class=\"n\">skore</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]),</span>\n        <span class=\"n\">x</span><span class=\"o\">=</span><span class=\"n\">ODSAZENI_TEXTU</span><span class=\"p\">,</span>\n        <span class=\"n\">y</span><span class=\"o\">=</span><span class=\"n\">VYSKA</span> <span class=\"o\">-</span> <span class=\"n\">ODSAZENI_TEXTU</span> <span class=\"o\">-</span> <span class=\"n\">VELIKOST_FONTU</span><span class=\"p\">,</span>\n        <span class=\"n\">pozice_x</span><span class=\"o\">=</span><span class=\"s1\">&#39;left&#39;</span><span class=\"p\">,</span>\n    <span class=\"p\">)</span>\n\n    <span class=\"n\">nakresli_text</span><span class=\"p\">(</span>\n        <span class=\"nb\">str</span><span class=\"p\">(</span><span class=\"n\">skore</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]),</span>\n        <span class=\"n\">x</span><span class=\"o\">=</span><span class=\"n\">SIRKA</span> <span class=\"o\">-</span> <span class=\"n\">ODSAZENI_TEXTU</span><span class=\"p\">,</span>\n        <span class=\"n\">y</span><span class=\"o\">=</span><span class=\"n\">VYSKA</span> <span class=\"o\">-</span> <span class=\"n\">ODSAZENI_TEXTU</span> <span class=\"o\">-</span> <span class=\"n\">VELIKOST_FONTU</span><span class=\"p\">,</span>\n        <span class=\"n\">pozice_x</span><span class=\"o\">=</span><span class=\"s1\">&#39;right&#39;</span><span class=\"p\">,</span>\n    <span class=\"p\">)</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">pyglet.window</span> <span class=\"kn\">import</span> <span class=\"n\">key</span>\n<span class=\"o\">...</span>\n<span class=\"k\">def</span> <span class=\"nf\">stisk_klavesy</span><span class=\"p\">(</span><span class=\"n\">symbol</span><span class=\"p\">,</span> <span class=\"n\">modifikatory</span><span class=\"p\">):</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">W</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">add</span><span class=\"p\">((</span><span class=\"s1\">&#39;nahoru&#39;</span><span class=\"p\">,</span> <span class=\"mi\">0</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">S</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">add</span><span class=\"p\">((</span><span class=\"s1\">&#39;dolu&#39;</span><span class=\"p\">,</span> <span class=\"mi\">0</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">UP</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">add</span><span class=\"p\">((</span><span class=\"s1\">&#39;nahoru&#39;</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">DOWN</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">add</span><span class=\"p\">((</span><span class=\"s1\">&#39;dolu&#39;</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">))</span>\n\n\n<span class=\"k\">def</span> <span class=\"nf\">pusteni_klavesy</span><span class=\"p\">(</span><span class=\"n\">symbol</span><span class=\"p\">,</span> <span class=\"n\">modifikatory</span><span class=\"p\">):</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">W</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">discard</span><span class=\"p\">((</span><span class=\"s1\">&#39;nahoru&#39;</span><span class=\"p\">,</span> <span class=\"mi\">0</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">S</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">discard</span><span class=\"p\">((</span><span class=\"s1\">&#39;dolu&#39;</span><span class=\"p\">,</span> <span class=\"mi\">0</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">UP</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">discard</span><span class=\"p\">((</span><span class=\"s1\">&#39;nahoru&#39;</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">))</span>\n    <span class=\"k\">if</span> <span class=\"n\">symbol</span> <span class=\"o\">==</span> <span class=\"n\">key</span><span class=\"o\">.</span><span class=\"n\">DOWN</span><span class=\"p\">:</span>\n        <span class=\"n\">stisknute_klavesy</span><span class=\"o\">.</span><span class=\"n\">discard</span><span class=\"p\">((</span><span class=\"s1\">&#39;dolu&#39;</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">))</span>\n<span class=\"o\">...</span>\n</pre></div>"
+                            },
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">import</span> <span class=\"nn\">random</span>\n<span class=\"o\">...</span>\n<span class=\"k\">def</span> <span class=\"nf\">reset</span><span class=\"p\">():</span>\n    <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">SIRKA</span> <span class=\"o\">//</span> <span class=\"mi\">2</span>\n    <span class=\"n\">pozice_mice</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">VYSKA</span> <span class=\"o\">//</span> <span class=\"mi\">2</span>\n\n    <span class=\"c1\"># x-ova rychlost - bud vpravo, nebo vlevo</span>\n    <span class=\"k\">if</span> <span class=\"n\">random</span><span class=\"o\">.</span><span class=\"n\">randint</span><span class=\"p\">(</span><span class=\"mi\">0</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">):</span>\n        <span class=\"n\">rychlost_mice</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">RYCHLOST</span>\n    <span class=\"k\">else</span><span class=\"p\">:</span>\n        <span class=\"n\">rychlost_mice</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"o\">-</span><span class=\"n\">RYCHLOST</span>\n    <span class=\"c1\"># y-ova rychlost - uplne nahodna</span>\n    <span class=\"n\">rychlost_mice</span><span class=\"p\">[</span><span class=\"mi\">1</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">random</span><span class=\"o\">.</span><span class=\"n\">uniform</span><span class=\"p\">(</span><span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">)</span> <span class=\"o\">*</span> <span class=\"n\">RYCHLOST</span>\n\n<span class=\"c1\"># nastavit vychozi stav pro start hry</span>\n<span class=\"n\">reset</span><span class=\"p\">()</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/projects/pong/index.md",
+                        "title": "Praktické cvičení: Pong",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/projects/pong/info.yml",
+                "static_files": {
+                    "pong.png": {
+                        "path": "pong/pong.png"
+                    }
+                },
+                "title": "Praktické cvičení: Pong"
+            },
+            "projects/snake": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies Ostrava napsal Lumr Balhar, 2018."
+                        ],
+                        "content": {
+                            "path": "snake/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [
+                            {
+                                "content": "<div class=\"highlight\"><pre><span></span><span class=\"kn\">from</span> <span class=\"nn\">pathlib</span> <span class=\"kn\">import</span> <span class=\"n\">Path</span>\n\n<span class=\"kn\">import</span> <span class=\"nn\">pyglet</span>\n\n<span class=\"n\">TILES_DIRECTORY</span> <span class=\"o\">=</span> <span class=\"n\">Path</span><span class=\"p\">(</span><span class=\"s1\">&#39;snake-tiles&#39;</span><span class=\"p\">)</span>\n\n<span class=\"n\">snake_tiles</span> <span class=\"o\">=</span> <span class=\"p\">{}</span>\n<span class=\"k\">for</span> <span class=\"n\">path</span> <span class=\"ow\">in</span> <span class=\"n\">TILES_DIRECTORY</span><span class=\"o\">.</span><span class=\"n\">glob</span><span class=\"p\">(</span><span class=\"s1\">&#39;*.png&#39;</span><span class=\"p\">):</span>\n    <span class=\"n\">snake_tiles</span><span class=\"p\">[</span><span class=\"n\">path</span><span class=\"o\">.</span><span class=\"n\">stem</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">pyglet</span><span class=\"o\">.</span><span class=\"n\">image</span><span class=\"o\">.</span><span class=\"n\">load</span><span class=\"p\">(</span><span class=\"n\">path</span><span class=\"p\">)</span>\n\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">snake_tiles</span><span class=\"p\">)</span>\n</pre></div>"
+                            }
+                        ],
+                        "source_file": "lessons/projects/snake/index.md",
+                        "title": "Snake",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/projects/snake/info.yml",
+                "static_files": {
+                    "apple.png": {
+                        "path": "snake/apple.png"
+                    },
+                    "coords.svg": {
+                        "path": "snake/coords.svg"
+                    },
+                    "green.png": {
+                        "path": "snake/green.png"
+                    },
+                    "screenshot-cat.png": {
+                        "path": "snake/screenshot-cat.png"
+                    },
+                    "screenshot-final.png": {
+                        "path": "snake/screenshot-final.png"
+                    },
+                    "snake-tiles.png": {
+                        "path": "snake/snake-tiles.png"
+                    },
+                    "snake-tiles.zip": {
+                        "path": "snake/snake-tiles.zip"
+                    },
+                    "snake-tiles/bottom-bottom.png": {
+                        "path": "snake/snake-tiles/bottom-bottom.png"
+                    },
+                    "snake-tiles/bottom-dead.png": {
+                        "path": "snake/snake-tiles/bottom-dead.png"
+                    },
+                    "snake-tiles/bottom-head.png": {
+                        "path": "snake/snake-tiles/bottom-head.png"
+                    },
+                    "snake-tiles/bottom-left.png": {
+                        "path": "snake/snake-tiles/bottom-left.png"
+                    },
+                    "snake-tiles/bottom-right.png": {
+                        "path": "snake/snake-tiles/bottom-right.png"
+                    },
+                    "snake-tiles/bottom-tongue.png": {
+                        "path": "snake/snake-tiles/bottom-tongue.png"
+                    },
+                    "snake-tiles/bottom-top.png": {
+                        "path": "snake/snake-tiles/bottom-top.png"
+                    },
+                    "snake-tiles/left-bottom.png": {
+                        "path": "snake/snake-tiles/left-bottom.png"
+                    },
+                    "snake-tiles/left-dead.png": {
+                        "path": "snake/snake-tiles/left-dead.png"
+                    },
+                    "snake-tiles/left-head.png": {
+                        "path": "snake/snake-tiles/left-head.png"
+                    },
+                    "snake-tiles/left-left.png": {
+                        "path": "snake/snake-tiles/left-left.png"
+                    },
+                    "snake-tiles/left-right.png": {
+                        "path": "snake/snake-tiles/left-right.png"
+                    },
+                    "snake-tiles/left-tongue.png": {
+                        "path": "snake/snake-tiles/left-tongue.png"
+                    },
+                    "snake-tiles/left-top.png": {
+                        "path": "snake/snake-tiles/left-top.png"
+                    },
+                    "snake-tiles/right-bottom.png": {
+                        "path": "snake/snake-tiles/right-bottom.png"
+                    },
+                    "snake-tiles/right-dead.png": {
+                        "path": "snake/snake-tiles/right-dead.png"
+                    },
+                    "snake-tiles/right-head.png": {
+                        "path": "snake/snake-tiles/right-head.png"
+                    },
+                    "snake-tiles/right-left.png": {
+                        "path": "snake/snake-tiles/right-left.png"
+                    },
+                    "snake-tiles/right-right.png": {
+                        "path": "snake/snake-tiles/right-right.png"
+                    },
+                    "snake-tiles/right-tongue.png": {
+                        "path": "snake/snake-tiles/right-tongue.png"
+                    },
+                    "snake-tiles/right-top.png": {
+                        "path": "snake/snake-tiles/right-top.png"
+                    },
+                    "snake-tiles/tail-bottom.png": {
+                        "path": "snake/snake-tiles/tail-bottom.png"
+                    },
+                    "snake-tiles/tail-dead.png": {
+                        "path": "snake/snake-tiles/tail-dead.png"
+                    },
+                    "snake-tiles/tail-head.png": {
+                        "path": "snake/snake-tiles/tail-head.png"
+                    },
+                    "snake-tiles/tail-left.png": {
+                        "path": "snake/snake-tiles/tail-left.png"
+                    },
+                    "snake-tiles/tail-right.png": {
+                        "path": "snake/snake-tiles/tail-right.png"
+                    },
+                    "snake-tiles/tail-tongue.png": {
+                        "path": "snake/snake-tiles/tail-tongue.png"
+                    },
+                    "snake-tiles/tail-top.png": {
+                        "path": "snake/snake-tiles/tail-top.png"
+                    },
+                    "snake-tiles/top-bottom.png": {
+                        "path": "snake/snake-tiles/top-bottom.png"
+                    },
+                    "snake-tiles/top-dead.png": {
+                        "path": "snake/snake-tiles/top-dead.png"
+                    },
+                    "snake-tiles/top-head.png": {
+                        "path": "snake/snake-tiles/top-head.png"
+                    },
+                    "snake-tiles/top-left.png": {
+                        "path": "snake/snake-tiles/top-left.png"
+                    },
+                    "snake-tiles/top-right.png": {
+                        "path": "snake/snake-tiles/top-right.png"
+                    },
+                    "snake-tiles/top-tongue.png": {
+                        "path": "snake/snake-tiles/top-tongue.png"
+                    },
+                    "snake-tiles/top-top.png": {
+                        "path": "snake/snake-tiles/top-top.png"
+                    },
+                    "tile-selection.svg": {
+                        "path": "snake/tile-selection.svg"
+                    }
+                },
+                "title": "Snake"
+            },
+            "training/middle": {
+                "pages": {
+                    "index": {
+                        "attribution": [
+                            "Pro PyLadies CZ napsal Miroslav Brabenec, 2020."
+                        ],
+                        "content": {
+                            "path": "middle/index.html"
+                        },
+                        "license": "cc-by-sa-40",
+                        "slug": "index",
+                        "solutions": [],
+                        "source_file": "lessons/training/middle/index.md",
+                        "title": "Další možnosti procvičování",
+                        "vars": {
+                            "coach-present": true,
+                            "pyladies": true,
+                            "user-gender": "f"
+                        }
+                    }
+                },
+                "source_file": "lessons/training/middle/info.yml",
+                "static_files": {
+                    "PythonNotesForProfessionals.png": {
+                        "path": "middle/PythonNotesForProfessionals.png"
+                    },
+                    "codewars.png": {
+                        "path": "middle/codewars.png"
+                    },
+                    "pythontutor.png": {
+                        "path": "middle/pythontutor.png"
+                    }
+                },
+                "title": "Další možnosti procvičování"
+            }
+        },
+        "long_description": "<p>Tady najdeš všechny materiály k pražské verzi začátečnického kurzu PyLadies. Stránky samotných PyLadies jsou na <a href=\"https://pyladies.cz\">https://pyladies.cz</a>. Jednotlivé lekce jsou určeny naprostým začátečnicím. Instrukce jsou uvedeny pro operační systémy Linux, Windows i MacOS.\nDomácí projekty lze odevzdávat na projekty.pyladies.cz.</p>",
+        "place": "Praha",
+        "sessions": [
+            {
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/install",
+                        "title": "Instalace Pythonu",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/install-editor",
+                        "title": "Instalace editoru",
+                        "type": "lesson"
+                    }
+                ],
+                "serial": "0",
+                "slug": "install",
+                "source_file": "courses/pyladies.yml",
+                "title": "Instalace (domácí příprava)"
+            },
+            {
+                "date": "2022-09-21",
+                "materials": [
+                    {
+                        "external_url": "http://pyladies.cz/v1/s001-install/uvod-praha.html",
+                        "title": "Úvodní prezentace",
+                        "type": "none-link"
+                    },
+                    {
+                        "lesson_slug": "beginners/cmdline",
+                        "title": "Úvod do příkazové řádky",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/venv-setup",
+                        "title": "Nastavení prostředí",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/first-steps",
+                        "title": "První krůčky",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/hello-world",
+                        "title": "První program",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/",
+                        "title": "Domácí projekty",
+                        "type": "homework"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf",
+                        "title": "Tahák na klávesnici (PDF)",
+                        "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://s3-eu-west-1.amazonaws.com/messa-shared-files/2017/09/pyladies_2_lekce_tahak.pdf",
+                        "title": "Tahák na příkazovou řádku a první kroky v Pythonu (PDF)",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "1",
+                "slug": "first-program",
+                "source_file": "courses/pyladies.yml",
+                "title": "První program"
+            },
+            {
+                "date": "2022-09-27",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/print",
+                        "title": "Print a chybové hlášky",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/variables",
+                        "title": "Proměnné",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/comparisons",
+                        "title": "Porovnávání",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/and-or",
+                        "title": "*Nebo* anebo *a*",
+                        "type": "lesson",
+                        "vars": {
+                            "bonus": true
+                        }
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/errors/errors-cs.pdf",
+                        "title": "Tahák na běžné chyby a chybové hlášky (PDF)",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "2",
+                "slug": "variables-ifs",
+                "source_file": "courses/pyladies.yml",
+                "title": "Proměnné a podmínky"
+            },
+            {
+                "date": "2022-10-05",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/functions",
+                        "title": "Funkce",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/basic-functions",
+                        "title": "Užitečné funkce",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "intro/turtle",
+                        "title": "Cyklus For",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/basic-functions/basic-functions-cs.pdf",
+                        "title": "Tahák s užitečnými funkcemi",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "3",
+                "slug": "loops",
+                "source_file": "courses/pyladies.yml",
+                "title": "Funkce a cyklus For"
+            },
+            {
+                "date": "2022-10-12",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/while",
+                        "title": "Cyklus While",
+                        "type": "lesson"
+                    }
+                ],
+                "serial": "4",
+                "slug": "while-functions",
+                "source_file": "courses/pyladies.yml",
+                "title": "While & Opakování cyklů"
+            },
+            {
+                "date": "2022-10-19",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/def",
+                        "title": "Vlastní funkce",
+                        "type": "lesson"
+                    }
+                ],
+                "serial": "5",
+                "slug": "def",
+                "source_file": "courses/pyladies.yml",
+                "title": "Vlastní funkce"
+            },
+            {
+                "date": "2022-10-26",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/str",
+                        "title": "Řetězce",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/fstring",
+                        "title": "Šablony (formátovací řetězce)",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf",
+                        "title": "Řetězcový tahák",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "6",
+                "slug": "strings",
+                "source_file": "courses/pyladies.yml",
+                "title": "Řetězce"
+            },
+            {
+                "date": "2022-11-02",
+                "materials": [
+                    {
+                        "title": "Procvičíme si vše, co jsme se naučily",
+                        "type": "special"
+                    },
+                    {
+                        "lesson_slug": "beginners/files",
+                        "title": "Soubory",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "training/middle",
+                        "title": "Další možnosti procvičování",
+                        "type": "lesson"
+                    }
+                ],
+                "serial": "7",
+                "slug": "practice",
+                "source_file": "courses/pyladies.yml",
+                "title": "Procvičování & soubory"
+            },
+            {
+                "date": "2022-11-09",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/list",
+                        "title": "Seznamy",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/tuple",
+                        "title": "N-tice",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/lists/lists-cs.pdf",
+                        "title": "Tahák na seznamy",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "8",
+                "slug": "list",
+                "source_file": "courses/pyladies.yml",
+                "title": "Seznamy"
+            },
+            {
+                "date": "2022-11-16",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/dict",
+                        "title": "Slovníky",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf",
+                        "title": "Slovníkový tahák",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "9",
+                "slug": "dict",
+                "source_file": "courses/pyladies.yml",
+                "title": "Slovníky"
+            },
+            {
+                "date": "2022-11-23",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/exceptions",
+                        "title": "Výjimky",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/modules",
+                        "title": "Moduly",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "beginners/circular-imports",
+                        "title": "Cyklické importy",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/exceptions/exceptions-cs.pdf",
+                        "title": "Výjimkový tahák",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "10",
+                "slug": "exceptions",
+                "source_file": "courses/pyladies.yml",
+                "title": "Výjimky, moduly"
+            },
+            {
+                "date": "2022-11-30",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/class",
+                        "title": "Třídy",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/classes/classes.pdf",
+                        "title": "Tahák na třídy",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "11",
+                "slug": "class",
+                "source_file": "courses/pyladies.yml",
+                "title": "Opakování & Třídy I"
+            },
+            {
+                "date": "2022-12-07",
+                "materials": [
+                    {
+                        "lesson_slug": "beginners/inheritance",
+                        "title": "Dědičnost",
+                        "type": "lesson"
+                    }
+                ],
+                "serial": "12",
+                "slug": "inheritance",
+                "source_file": "courses/pyladies.yml",
+                "title": "Třídy II & Dědičnost"
+            },
+            {
+                "date": "2022-12-14",
+                "materials": [
+                    {
+                        "lesson_slug": "intro/pyglet",
+                        "title": "Grafika",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "projects/pong",
+                        "title": "Praktické cvičení: Pong",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "http://pyladies.cz/v1/s012-pyglet/pong.py",
+                        "title": "Kód celé hry Pong",
+                        "type": "link"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/pyglet/pyglet-basics-cs.pdf",
+                        "title": "Tahák na Pyglet",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "13",
+                "slug": "pyglet",
+                "source_file": "courses/pyladies.yml",
+                "title": "Grafika"
+            },
+            {
+                "materials": [
+                    {
+                        "lesson_slug": "projects/asteroids",
+                        "title": "Asteroids",
+                        "type": "lesson"
+                    },
+                    {
+                        "lesson_slug": "projects/snake",
+                        "title": "Snake",
+                        "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/sets/sets-cs.pdf",
+                        "title": "Množinový tahák",
+                        "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://pyvec.github.io/cheatsheets/game-physics/game-physics-cs.pdf",
+                        "title": "Tahák na geometrii a fyziku 2D her",
+                        "type": "cheatsheet"
+                    }
+                ],
+                "serial": "14",
+                "slug": "hackaton",
+                "source_file": "courses/pyladies.yml",
+                "title": "Závěrečný projekt"
+            }
+        ],
+        "source_file": "courses/pyladies.yml",
+        "subtitle": "Praha - podzim 2022",
+        "time_description": "18:00 - 20:00",
+        "timezone": "Europe/Prague",
+        "title": "Začátečnický kurz PyLadies",
+        "vars": {
+            "coach-present": true,
+            "pyladies": true,
+            "user-gender": "f"
+        }
+    }
+}
