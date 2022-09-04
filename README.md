@@ -34,6 +34,10 @@ do vývoje, je potřeba ho nejdřív nainstalovat:
     $ poetry install
     ```
 
+    ```
+    $ PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring poetry -vvv install
+    ```
+
 Nainstalovanou aplikaci spustíš následovně:
 
 * Spusť vývojový server:

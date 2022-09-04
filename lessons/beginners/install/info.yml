@@ -4,8 +4,8 @@ attribution: Pro PyLadies Brno napsal Petr Viktorin, 2014-2017.
 license: cc-by-sa-40
 subpages:
     linux:
-        subtitle: Linux
+        title: Instalace Pythonu - Linux
     windows:
-        subtitle: Windows
+        title: Instalace Pythonu - Windows
     macos:
-        subtitle: macOS
+        title: Instalace Pythonu - macOS

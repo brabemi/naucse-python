@@ -53,22 +53,22 @@ nebo pusť `python` z příkazové řádky.)
     <tr>
         <td><code>&lt;</code>, <code>&gt;</code></td>
         <td><code>3 &lt; 5</code>, <code>3 &gt; 5</code></td>
-        <td>Menší než, větší než</td>
+        <td>Větší než, menší než</td>
     </tr>
     <tr>
         <td><code>&lt;=</code>, <code>&gt;=</code></td>
         <td><code>3 &lt;= 5</code>, <code>3 &gt;= 5</code></td>
-        <td>Menší nebo rovno, větší nebo rovno</td>
+        <td>Větší nebo rovno, menší nebo rovno</td>
     </tr>
 </table>
 
 Hodnoty provnání jsou takzvané *booleovské* hodnoty
 (angl. *boolean*, podle [G. Boolea](http://en.wikipedia.org/wiki/George_Boole)).
-V Pythonu je můžeš použít vždycky, když potřebuješ vědět, jestli něco platí
+V Pythonu se používají vždycky, když potřebujeme vědět, jestli něco platí
 nebo neplatí.
 Jsou jenom dvě – buď `True` (pravda), nebo `False` (nepravda).
 
-Jako všechny hodnoty, `True` a `False` můžeš přiřadit do proměnných:
+Jako všechny hodnoty, `True` a `False` se dají přiřazovat do proměnných:
 
 ```python
 pravda = 1 < 3
@@ -79,12 +79,12 @@ print(nepravda)
 ```
 
 > [note]
-> Všimni si, že rovnost zjistíš pomocí dvou rovnítek: `3 == 3`.
+> Všimni si, že rovnost se zjišťuje pomocí dvou rovnítek: `3 == 3`.
 > Jedno rovnítko přiřazuje do proměnné; dvě rovnítka porovnávají.
 
-Slova <code>True</code> a <code>False</code> můžeš
+Slova <code>True</code> a <code>False</code> jdou
 v programu použít i přímo,
-jen si dej pozor na velikost písmen:
+jen je potřeba dávat pozor na velikost písmen:
 
 ```python
 print(True)
@@ -130,9 +130,10 @@ když uživatel zadal kladné číslo.
     ```
 {% endfilter %}
 
-A nyní řekni počítači, aby se na základě hodnoty této proměnné rozhodl, co má udělat.
-K tomu můžeš použít dvojici příkazů `if` (*pokud*)
-a `else` (*jinak*):
+A nyní řekneme počítači, aby se na základě hodnoty této proměnné rozhodl, co má udělat.
+K tomu se používá dvojice příkazů `if` (*pokud*)
+a `else` (*jinak*).
+Nejlepší bude je ukázat na příkladu:
 
 ```python
 strana = float(input('Zadej stranu čtverce v centimetrech: '))
@@ -169,12 +170,10 @@ podmíněná část programu už skončila.
 
 > [style-note]
 > Vzato čistě technicky, odsazení nemusí být o čtyři mezery.
-> Může být třeba o dvě nebo o jedenáct, nebo se dokonce dá místo mezer použít
-> tabulátor.
+> Může být třeba o dvě nebo o jedenáct, nebo dokonce o tabulátor.
 > V rámci jednoho bloku musí být ale odsazení vždycky stejné,
 > takže když pak na jednom programu spolupracuje více lidí, musí se shodnout.
 > No a na čtyřech mezerách se shodla většina Pythonního světa.
-
 
 ## Další podmíněné příkazy
 
