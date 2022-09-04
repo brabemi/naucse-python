@@ -9,7 +9,7 @@ timezone: Europe/Prague
 place: Praha
 description: Naučte se Python vážně od začátku. Žádné předchozí znalosti nejsou potřeba.
 long_description: |
-    Tady najdeš všechny materiály k pražské verzi začátečnického kurzu PyLadies. Stránky samotných PyLadies jsou na https://pyladies.cz. Jednotlivé lekce jsou určeny naprostým začátečnicím. Instrukce jsou uvedeny pro operační systémy Linux, Windows i macOS.
+    Tady najdeš všechny materiály k pražské verzi začátečnického kurzu PyLadies. Stránky samotných PyLadies jsou na https://pyladies.cz. Jednotlivé lekce jsou určeny naprostým začátečnicím. Instrukce jsou uvedeny pro operační systémy Linux, Windows i MacOS.
     Domácí projekty lze odevzdávat na projekty.pyladies.cz.
 vars:
   user-gender: f
