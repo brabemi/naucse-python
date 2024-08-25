@@ -1311,7 +1311,7 @@
                 "title": "Instalace (domácí příprava)"
             },
             {
-                "date": "2023-09-18",
+                "date": "2024-09-18",
                 "materials": [
                     {
                         "external_url": "http://pyladies.cz/v1/s001-install/uvod-praha.html",
@@ -1360,7 +1360,7 @@
                 "title": "První program"
             },
             {
-                "date": "2023-09-25",
+                "date": "2024-09-25",
                 "materials": [
                     {
                         "lesson_slug": "beginners/print",
@@ -1397,7 +1397,7 @@
                 "title": "Proměnné a podmínky"
             },
             {
-                "date": "2023-10-02",
+                "date": "2024-10-02",
                 "materials": [
                     {
                         "lesson_slug": "beginners/functions",
@@ -1426,7 +1426,7 @@
                 "title": "Funkce a cyklus For"
             },
             {
-                "date": "2023-10-09",
+                "date": "2024-10-09",
                 "materials": [
                     {
                         "lesson_slug": "beginners/while",
@@ -1440,7 +1440,7 @@
                 "title": "While & Opakování cyklů"
             },
             {
-                "date": "2023-10-16",
+                "date": "2024-10-16",
                 "materials": [
                     {
                         "lesson_slug": "beginners/def",
@@ -1454,7 +1454,7 @@
                 "title": "Vlastní funkce"
             },
             {
-                "date": "2023-10-23",
+                "date": "2024-10-23",
                 "materials": [
                     {
                         "lesson_slug": "beginners/str",
@@ -1478,7 +1478,7 @@
                 "title": "Řetězce"
             },
             {
-                "date": "2023-10-30",
+                "date": "2024-10-30",
                 "materials": [
                     {
                         "title": "Procvičíme si vše, co jsme se naučily",
@@ -1501,7 +1501,7 @@
                 "title": "Procvičování & soubory"
             },
             {
-                "date": "2023-11-06",
+                "date": "2024-11-06",
                 "materials": [
                     {
                         "lesson_slug": "beginners/list",
@@ -1525,7 +1525,7 @@
                 "title": "Seznamy"
             },
             {
-                "date": "2023-11-13",
+                "date": "2024-11-13",
                 "materials": [
                     {
                         "lesson_slug": "beginners/dict",
@@ -1544,7 +1544,7 @@
                 "title": "Slovníky"
             },
             {
-                "date": "2023-11-20",
+                "date": "2024-11-20",
                 "materials": [
                     {
                         "lesson_slug": "beginners/exceptions",
@@ -1573,7 +1573,7 @@
                 "title": "Výjimky, moduly"
             },
             {
-                "date": "2023-11-27",
+                "date": "2024-11-27",
                 "materials": [
                     {
                         "lesson_slug": "beginners/class",
@@ -1592,7 +1592,7 @@
                 "title": "Opakování & Třídy I"
             },
             {
-                "date": "2023-12-05",
+                "date": "2024-12-05",
                 "materials": [
                     {
                         "lesson_slug": "beginners/inheritance",
@@ -1606,7 +1606,7 @@
                 "title": "Třídy II & Dědičnost"
             },
             {
-                "date": "2023-12-11",
+                "date": "2024-12-11",
                 "materials": [
                     {
                         "lesson_slug": "intro/pyglet",
