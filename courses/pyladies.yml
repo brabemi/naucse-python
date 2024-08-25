@@ -27,7 +27,7 @@ sessions:
 
 - title: První program
   slug: first-program
-  date: 2023-09-18
+  date: 2024-09-18
   materials:
     - title: Úvodní prezentace
       url: http://pyladies.cz/v1/s001-install/uvod-praha.html
@@ -51,7 +51,7 @@ sessions:
 
 - title: Proměnné a podmínky
   slug: variables-ifs
-  date: 2023-09-25
+  date: 2024-09-25
   materials:
     - lesson: beginners/print
       type: lesson
@@ -69,7 +69,7 @@ sessions:
 
 - slug: loops
   title: Funkce a cyklus For
-  date: 2023-10-02
+  date: 2024-10-02
   materials:
     - lesson: beginners/functions
       type: lesson
@@ -84,21 +84,21 @@ sessions:
 
 - slug: while-functions
   title: While & Opakování cyklů
-  date: 2023-10-09
+  date: 2024-10-09
   materials:
     - lesson: beginners/while
       type: lesson
 
 - slug: def
   title: Vlastní funkce
-  date: 2023-10-16
+  date: 2024-10-16
   materials:
     - lesson: beginners/def
       type: lesson
 
 - slug: strings
   title: Řetězce
-  date: 2023-10-23
+  date: 2024-10-23
   materials:
     - lesson: beginners/str
       type: lesson
@@ -110,7 +110,7 @@ sessions:
 
 - slug: practice
   title: Procvičování & soubory
-  date: 2023-10-30
+  date: 2024-10-30
   materials:
     - title: Procvičíme si vše, co jsme se naučily
       url: null
@@ -122,7 +122,7 @@ sessions:
 
 - slug: list
   title: Seznamy
-  date: 2023-11-06
+  date: 2024-11-06
   materials:
   - lesson: beginners/list
   - lesson: beginners/tuple
@@ -132,7 +132,7 @@ sessions:
 
 - slug: dict
   title: Slovníky
-  date: 2023-11-13
+  date: 2024-11-13
   materials:
     - lesson: beginners/dict
       type: lesson
@@ -142,7 +142,7 @@ sessions:
 
 - slug: exceptions
   title: Výjimky, moduly
-  date: 2023-11-20
+  date: 2024-11-20
   materials:
     - lesson: beginners/exceptions
     - lesson: beginners/modules
@@ -153,7 +153,7 @@ sessions:
 
 - slug: class
   title: Opakování & Třídy I
-  date: 2023-11-27
+  date: 2024-11-27
   materials:
     - lesson: beginners/class
       type: lesson
@@ -163,14 +163,14 @@ sessions:
 
 - slug: inheritance
   title: Třídy II & Dědičnost
-  date: 2023-12-05
+  date: 2024-12-05
   materials:
     - lesson: beginners/inheritance
       type: lesson
 
 - slug: pyglet
   title: Grafika
-  date: 2023-12-11
+  date: 2024-12-11
   materials:
   - lesson: intro/pyglet
   - lesson: projects/pong
