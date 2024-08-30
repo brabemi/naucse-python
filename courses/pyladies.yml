@@ -163,7 +163,7 @@ sessions:
 
 - slug: inheritance
   title: Třídy II & Dědičnost
-  date: 2024-12-05
+  date: 2024-12-04
   materials:
     - lesson: beginners/inheritance
       type: lesson
