@@ -1311,7 +1311,7 @@
                 "title": "Instalace (domácí příprava)"
             },
             {
-                "date": "2025-03-19",
+                "date": "2026-03-19",
                 "materials": [
                     {
                         "external_url": "http://pyladies.cz/v1/s001-install/uvod-praha.html",
@@ -1360,7 +1360,7 @@
                 "title": "První program"
             },
             {
-                "date": "2025-03-26",
+                "date": "2026-03-26",
                 "materials": [
                     {
                         "lesson_slug": "beginners/print",
@@ -1397,7 +1397,7 @@
                 "title": "Proměnné a podmínky"
             },
             {
-                "date": "2025-04-02",
+                "date": "2026-04-02",
                 "materials": [
                     {
                         "lesson_slug": "beginners/functions",
@@ -1426,7 +1426,7 @@
                 "title": "Funkce a cyklus For"
             },
             {
-                "date": "2025-04-09",
+                "date": "2026-04-09",
                 "materials": [
                     {
                         "lesson_slug": "beginners/while",
@@ -1440,7 +1440,7 @@
                 "title": "While & Opakování cyklů"
             },
             {
-                "date": "2025-04-16",
+                "date": "2026-04-16",
                 "materials": [
                     {
                         "lesson_slug": "beginners/def",
@@ -1454,7 +1454,7 @@
                 "title": "Vlastní funkce"
             },
             {
-                "date": "2025-04-23",
+                "date": "2026-04-23",
                 "materials": [
                     {
                         "lesson_slug": "beginners/str",
@@ -1478,7 +1478,7 @@
                 "title": "Řetězce"
             },
             {
-                "date": "2025-04-30",
+                "date": "2026-04-30",
                 "materials": [
                     {
                         "title": "Procvičíme si vše, co jsme se naučily",
@@ -1501,7 +1501,7 @@
                 "title": "Procvičování & soubory"
             },
             {
-                "date": "2025-05-07",
+                "date": "2026-05-07",
                 "materials": [
                     {
                         "lesson_slug": "beginners/list",
@@ -1525,7 +1525,7 @@
                 "title": "Seznamy"
             },
             {
-                "date": "2025-05-14",
+                "date": "2026-05-14",
                 "materials": [
                     {
                         "lesson_slug": "beginners/dict",
@@ -1544,7 +1544,7 @@
                 "title": "Slovníky"
             },
             {
-                "date": "2025-05-21",
+                "date": "2026-05-21",
                 "materials": [
                     {
                         "lesson_slug": "beginners/exceptions",
@@ -1573,7 +1573,7 @@
                 "title": "Výjimky, moduly"
             },
             {
-                "date": "2025-05-28",
+                "date": "2026-05-28",
                 "materials": [
                     {
                         "lesson_slug": "beginners/class",
@@ -1592,7 +1592,7 @@
                 "title": "Opakování & Třídy I"
             },
             {
-                "date": "2025-06-04",
+                "date": "2026-06-04",
                 "materials": [
                     {
                         "lesson_slug": "beginners/inheritance",
@@ -1606,7 +1606,7 @@
                 "title": "Třídy II & Dědičnost"
             },
             {
-                "date": "2025-06-11",
+                "date": "2026-06-11",
                 "materials": [
                     {
                         "lesson_slug": "intro/pyglet",
@@ -1664,7 +1664,7 @@
             }
         ],
         "source_file": "courses/pyladies.yml",
-        "subtitle": "Praha - jaro 2025",
+        "subtitle": "Praha - jaro 2026",
         "time_description": "18:00 - 20:00",
         "timezone": "Europe/Prague",
         "title": "Začátečnický kurz PyLadies",
